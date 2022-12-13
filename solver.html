@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>LoD Pirate Chest Solver</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <script src="https://unpkg.com/underscore@1.13.6/underscore-umd-min.js"></script>
+        <script src="solver.js"></script>
+    </head>
+    <body>
+        <main class="container">
+            <hgroup>
+                <h1>Legend of Dragoon</h1>
+                <h2>Pirate Chest Solver</h2>
+            </hgroup>
+            <hgroup>
+                <h3 id="numbers"></h3>
+                <h3>Numbers</h3>
+            </hgroup>
+            <table><tbody id="guesses"></tbody></table>
+            <ol id="attempts"></ol>
+            <input type="text" id="input" placeholder="Numbers" required>
+            <div>
+                <span style="color: var(--primary)">Best</span>,
+                <span style="color: var(--ins-color)">Valid</span>,
+                <span style="color: var(--del-color)">Invalid</span> guesses
+            </div>
+            <div>"..." is a match and input "y", else input "n"</div>
+            <div>Opening the chest is "d"</div>
+        </main>
+    </body>
+</html>
